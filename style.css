@@ -1,0 +1,84 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* Custom Properties */
+:root {
+--clr-card: hsl(0, 0%, 100%);
+--clr-background: hsl(212, 45%, 89%);
+--clr-text: hsl(220, 15%, 55%);
+--clr-heading: hsl(218, 44%, 22%);
+
+--ff-base: 'Outfit', sans-serif;
+--fs-base: 15px;
+
+--fw-regular: 500;
+--fw-bold: 700;
+
+}
+
+/* Main CSS */
+.body{
+    background-color: var(--clr-background);
+    min-height: 100%;
+    display: grid;
+    font-size: var(--fs-base);
+}
+
+.box{
+    background-color: var(--clr-card);
+    width: 20rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.picture{
+    border-radius: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.padding{
+    padding: 0px 0.8rem;
+}
+
+.heading{
+    color: var(--clr-heading);
+    font-size: 1.5em;
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.content{
+    color: var(--clr-text);
+    font-weight: var(--fw-regular);
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
