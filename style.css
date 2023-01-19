@@ -44,27 +44,25 @@
 /* Main CSS */
 .body{
     background-color: var(--clr-background);
-    min-height: 100%;
+    min-height: 100vh;
     display: grid;
     font-size: var(--fs-base);
 }
 
 .box{
     background-color: var(--clr-card);
-    width: 20rem;
+    max-width: 20rem;
     margin: auto;
     padding: 1rem;
-    border-radius: 1rem;
     text-align: center;
 }
 
-.picture{
-    border-radius: 0.7rem;
-    margin-bottom: 1.5rem;
+.border_radius{
+  border-radius: 0.8rem;
 }
 
-.padding{
-    padding: 0px 0.8rem;
+.container{
+    padding: 1.5rem 0.8rem;
 }
 
 .heading{
@@ -75,10 +73,9 @@
     margin-bottom: 1rem;
 }
 
-.content{
+.text{
     color: var(--clr-text);
     font-weight: var(--fw-regular);
     font-size: 1.1em;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
 }
